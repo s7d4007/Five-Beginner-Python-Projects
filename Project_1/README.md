@@ -17,7 +17,7 @@ This project is part of the "Five Basic Python Projects" series. It demonstrates
 3. Run the Python script:
 
     ```bash
-    python [your_file_name].py
+    python number_guessing_game.py
     ```
 
 ## Requirements
