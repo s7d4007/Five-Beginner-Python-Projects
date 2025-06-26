@@ -5,7 +5,7 @@ import shutil
 
 Extensions = {
     'Images' : ['.jpg', '.jpeg', '.gif', '.png','.webp','.bmp'],
-    'Documents' : ['.docx','.xlsx','.ppt','.txt','.pdf ','.doc'],
+    'Documents' : ['.docx','.xlsx','.pptx','.txt','.pdf','.doc'],
     'Videos' : ['.mp4','.mkv','.mov','.avi'],
     'Music' : ['.mp3','.wav','.aac'],
     'Archives' : ['.zip','.rar', '.7z', '.tar', '.gz'],
@@ -17,7 +17,7 @@ def get_folder_name(extension):
     for folder, extensions in Extensions.items():
         if extension in extensions:
             return folder
-        return 'Others'
+    return 'Others'
     
 def organize_files(directory):
     for filename in os.listdir(directory):
